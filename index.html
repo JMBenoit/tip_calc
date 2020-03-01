@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Split The Bill</title>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 id="header">Split The Bill</h1>
+      <form id="calc">
+
+        <label for="billTotal">Bill Total</label>
+        <input type="text" id="billTotal">
+
+        <label for="tipPercent">Tip Percentage</label>
+        <select id="tipPercent">
+          <option value=".1" selected>Bad - 10%</option>
+          <option value=".15">Average - 15%</option>
+          <option value=".2">Good - 20%</option>
+          <option value=".25">Excellent - 25%</option>
+        </select>
+
+        <label for="people">Number of People</label>
+        <input type="text" id="people">
+
+        <label for="button"></label>
+        <button type="button" id="button" onclick="calculate()">Calculate</button>
+        <label for="button"></label>
+
+        <div id="header">
+          <h2>Cost Per Person:</h2>
+          <h1>$<span id="output">0</span></h1>
+        </div>
+      </form>
+    </div>
+
+
+
+    <script src="./js/app.js" charset="utf-8"></script>
+  </body>
+</html>
